@@ -5,7 +5,7 @@ import java.io.InputStreamReader;
 public class LuckyTicket {
     public static void main(String[] args) throws IOException {
         int[] arrayOfNumbers = inputNumbers();
-        boolean isLuckTicket = checkIsLuckTicket(arrayOfNumbers);
+        boolean isLuckTicket = checkItIsLuckyTicket(arrayOfNumbers);
         printResult(isLuckTicket);
     }
 
@@ -30,7 +30,7 @@ public class LuckyTicket {
         return secondThreeSum;
     }
 
-    public static boolean checkIsLuckTicket(int[] arrayOfNumbers) {
+    public static boolean checkItIsLuckyTicket(int[] arrayOfNumbers) {
         int firstThreeSum = checkFirstThreeNumbers(arrayOfNumbers);
         int secondThreeSum = checkSecondThreeNumbers(arrayOfNumbers);
         return (firstThreeSum) == (secondThreeSum);

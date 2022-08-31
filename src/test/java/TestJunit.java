@@ -1,23 +1,22 @@
 import org.junit.jupiter.api.*;
-
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 
 public class TestJunit {
     @Test
-    public void testIsLuckyTicketFalse() {
-        System.out.println("testLuckyTicketFalse");
+    public void luckyTicketIsFalseTest() {
+        System.out.println("luckyTicketIsFalseTest");
         int[] testArray = {1, 6, 1, 6, 6, 7};
-        boolean actualResult = LuckyTicket.checkIsLuckTicket(testArray);
+        boolean actualResult = LuckyTicket.checkItIsLuckyTicket(testArray);
         assertFalse(actualResult);
     }
 
     @Test
-    public void testIsLuckyTicketTrue() {
-        System.out.println("testLuckyTicketTrue");
+    public void luckyTicketIsTrueTest() {
+        System.out.println("luckyTicketIsTrueTest");
         int[] testArray = {4, 4, 2, 5, 4, 1};
-        boolean actualResult = LuckyTicket.checkIsLuckTicket(testArray);
+        boolean actualResult = LuckyTicket.checkItIsLuckyTicket(testArray);
         assertTrue(actualResult);
     }
 
