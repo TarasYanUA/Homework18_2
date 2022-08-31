@@ -1,7 +1,7 @@
 import org.testng.Assert;
 import org.testng.annotations.*;
 
-public class TestNg {
+public class LuckyTicketTestNg {
     @BeforeTest
     public void beforeTest() {
         System.out.println("Before all tests...");

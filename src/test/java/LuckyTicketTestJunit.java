@@ -3,7 +3,7 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 
-public class TestJunit {
+public class LuckyTicketTestJunit {
     @Test
     public void luckyTicketIsFalseTest() {
         System.out.println("luckyTicketIsFalseTest");
